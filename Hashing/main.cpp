@@ -1,3 +1,4 @@
+#include "HashAdaptor.hpp"
 #include "HashSupport.hpp"
 #include <algorithm>
 #include <initializer_list>
@@ -50,10 +51,11 @@ auto FindLongestSequence(I first, I last, P pred)
 int main()
 {
 	using namespace std;
+    using namespace JMlib::hashing;
 	
 	int bound = 0x110000l;
 
-	unordered_set<int, HashSupport::hash_functor<HashSupport::sha256>> specialSet;
+	unordered_set<int, hash_functor<sha256>> specialSet;
 	std::vector<int> collisions;
 	collisions.reserve(0x10000);
 
@@ -100,7 +102,7 @@ int main()
 
 	for (int i = 0; i < int(bucketCount); ++i)
 	{
-		auto bucketSize = specialSet.bucket_size(i);
+		auto bucketSize = static_cast<long long>(specialSet.bucket_size(i));
 		if (bucketSize <= 1) continue;
 
 		++overflowingBucketCount;

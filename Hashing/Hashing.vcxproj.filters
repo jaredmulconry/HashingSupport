@@ -21,9 +21,15 @@
     <ClCompile Include="HashSupport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HashAdaptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HashSupport.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HashAdaptor.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
