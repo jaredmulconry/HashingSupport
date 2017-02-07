@@ -18,18 +18,24 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HashSupport.cpp">
+    <ClCompile Include="HashAdaptor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HashAdaptor.cpp">
+    <ClCompile Include="Fnv1a.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SHA256.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HashSupport.hpp">
+    <ClInclude Include="HashAdaptor.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HashAdaptor.hpp">
+    <ClInclude Include="Fnv1a.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA256.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

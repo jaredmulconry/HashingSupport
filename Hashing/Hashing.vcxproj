@@ -19,13 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Fnv1a.cpp" />
     <ClCompile Include="HashAdaptor.cpp" />
-    <ClCompile Include="HashSupport.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SHA256.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Fnv1a.hpp" />
     <ClInclude Include="HashAdaptor.hpp" />
-    <ClInclude Include="HashSupport.hpp" />
+    <ClInclude Include="SHA256.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{004AB39B-0151-4F04-85DE-C62F134A48CD}</ProjectGuid>

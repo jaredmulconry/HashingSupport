@@ -6,19 +6,6 @@ namespace JMlib
 {
     namespace hashing
     {
-        class fnv1a
-        {
-            friend constexpr std::size_t offsetBasis() noexcept;
-            std::size_t hashState = offsetBasis();
-        public:
-            using result_type = std::size_t;
-
-            explicit operator result_type() noexcept;
-
-            void operator()(const void*, std::size_t) noexcept;
-            void Reset() noexcept;
-        };
-
         class sha256
         {
             static const constexpr int stateSize = 8;
@@ -37,7 +24,7 @@ namespace JMlib
             void Transform(const unsigned char* d) noexcept;
         public:
             using result_type = std::size_t;
-            static const constexpr std::size_t digest_size = 32;
+            static const constexpr std::size_t digest_size = 32ul;
 
             explicit operator result_type() noexcept;
 

@@ -1,5 +1,5 @@
 #include "HashAdaptor.hpp"
-#include "HashSupport.hpp"
+#include "SHA256.hpp"
 #include <algorithm>
 #include <initializer_list>
 #include <iomanip>
